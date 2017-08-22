@@ -1,14 +1,27 @@
 extends _layout
 
 block page
-  h2!=home.cover.title
-  p!=home.cover.intro
-  p!=home.cover.subintro
+  .page-home
 
-  ul
-    each link in site.links
-      li
-        if link.type === 'email'
-          a.section__link(href=`mailto:${link.href}?subject=Hi%20Andrea!`)=link.label
-        else
-          a.section__link(href=link.href)=link.label
+    .page-home__wrapper
+
+      section.page-home__section.page-home__section--cover
+        .page-home__section-wrapper
+
+          .section.section--cover
+            .section.section__wrapper
+              .section__index-wrapper
+                .section__icon
+                  include ../src/assets/images/logo-cover.svg
+              .section__info-wrapper
+                .section__info
+                  h2.section__title!=home.cover.title
+                  p.section__intro!=home.cover.intro
+                  p.section__intro!=home.cover.subintro
+
+                  .section__links
+                    each link in site.links
+                      if link.type === 'email'
+                        a.section__link(href=`mailto:${link.href}?subject=Hi%20Andrea!`)=link.label
+                      else
+                        a.section__link(href=link.href)=link.label

@@ -4,11 +4,13 @@ const Metalsmith = require('metalsmith'),
   layouts = require('metalsmith-layouts'),
   markdown = require('metalsmith-markdown'),
   pkg = require('./package.json'),
+  contents = require('./contents/'),
   config = require('./config/metalsmith');
 
 console.log(`${devBuild ? 'Development' : 'Production'} build, version ${pkg.version}`);
 
 const builder = Metalsmith(__dirname)
+  .metadata(Object.assign({}, contents, {version: pkg.version}))
   .source(config.sourceDir)
   .destination(config.destinationDir)
   .clean(true)

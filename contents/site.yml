@@ -1,0 +1,20 @@
+meta:
+  lang: en
+  locale: en_US
+  title: 'Andrea Mangano - Personal website'
+  description: 'Andrea Mangano - UI/Web Developer - Resume'
+
+links:
+  - type: email
+    href: andreaman87@gmail.com
+    label: Mail me
+  - type: linkedin
+    href: https://it.linkedin.com/in/manganoandrea
+    label: Linkedin
+  - type: github
+    href: https://github.com/andreamangano
+    label: Github
+
+footer:
+  quote: “A dream you dream alone is only a dream. A dream you dream together is reality.” — John Lennon
+  copyright: Andrea Mangano / Copyright ©2016. Created with passion & several lines of code.

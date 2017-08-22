@@ -1,0 +1,11 @@
+{
+  "port": 8000,
+  "interval": 500,
+  "delay": 0,
+  "bind": "localhost",
+  "serve": "build",
+  "watchexps": [
+    "**/*.pug, **/*.js, **/*.md, **/*.scss, contents/**/*.yml # npm run build",
+    "build/**/*"
+  ]
+}

@@ -5,6 +5,7 @@ block page
 
     .page-home__wrapper
 
+      //- COVER
       section.page-home__section.page-home__section--cover
         .page-home__section-wrapper
 
@@ -25,3 +26,19 @@ block page
                         a.section__link(href=`mailto:${link.href}?subject=Hi%20Andrea!`)=link.label
                       else
                         a.section__link(href=link.href)=link.label
+
+      //- COVER
+      section.page-home__section.page-home__section--skills
+        .page-home__section-wrapper
+
+          .section.section--skills
+            .section.section__wrapper
+              .section__index-wrapper
+                .section__icon
+                  include ../src/assets/images/skills.svg
+
+              .section__info-wrapper
+                .section__info
+                  h2.section__title!=home.skills.title
+                  p.section__intro!=home.skills.intro
+                  p.section__description!=home.skills.description

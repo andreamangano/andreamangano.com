@@ -2,3 +2,10 @@ cover:
   title: Andrea Mangano
   intro: I'm a skilled <strong>UI/Web Developer</strong>, a food lover, romantic and visionary man who loves building simple, delightful, optimised and task-oriented interfaces.
   subintro: I live in <span class="u-line-through">Rome</span>, <span class="u-line-through">Cork</span>, <span class="u-line-through">Milan</span>, Catania.
+
+skills:
+  title: Skills
+  intro: Everyday I write <strong>JavaScript</strong>, <strong>HTML</strong>(5) and <strong>CSS</strong>(3) code creating websites that are user-friendly, effective and appealing.
+         <br/>
+         I love to do it using javascript frameworks and libraries, build tools, task runners, CSS preprocessors and template engines.
+  description: During the last years I gained an in-depth understanding of the best practices to develop fast and modern web applications.

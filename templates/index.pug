@@ -1,1 +1,14 @@
-h1 Andrea Mangano Personal Website (WIP)
+extends _layout
+
+block page
+  h2!=home.cover.title
+  p!=home.cover.intro
+  p!=home.cover.subintro
+
+  ul
+    each link in site.links
+      li
+        if link.type === 'email'
+          a.section__link(href=`mailto:${link.href}?subject=Hi%20Andrea!`)=link.label
+        else
+          a.section__link(href=link.href)=link.label

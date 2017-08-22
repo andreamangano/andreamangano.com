@@ -23,7 +23,7 @@ Metalsmith(__dirname)
     directory: config.templateDir
   }))
   .use(sass({
-    outputDir: 'css/',
+    outputDir: config.cssOutputDir,
     outputStyle: devBuild ? 'expanded' : 'compressed',
     sourceMap: devBuild,
     sourceMapContents: devBuild,

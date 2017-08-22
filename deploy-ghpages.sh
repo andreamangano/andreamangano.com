@@ -1,7 +1,7 @@
 set -e
 GITURL=`git config remote.origin.url`
-npm install
-node index.js
+yarn install
+yarn run prod
 cd build
 rm -rf .git/
 git config --global user.email "$GH_EMAIL" > /dev/null 2>&1

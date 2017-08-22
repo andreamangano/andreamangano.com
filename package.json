@@ -8,7 +8,7 @@
     "build": "node index.js",
     "start:server": "light-server --config './config/light-server.json'",
     "start": "yarn run build && yarn run start:server",
-    "dev": "export NODE_ENV=develop && yarn start",
+    "dev": "export NODE_ENV=development && yarn start",
     "prod": "export NODE_ENV=production && yarn run build"
   },
   "dependencies": {

@@ -10,6 +10,24 @@ skills:
          I love to do it using javascript frameworks and libraries, build tools, task runners, CSS preprocessors and template engines.
   description: During the last years I gained an in-depth understanding of the best practices to develop fast and modern web applications.
 
+experiences:
+  title: Experience
+  intro: I work in the web industry for six years launching some ambitious web projects such as a marketplace for independent fashion brands and a platform to create exciting online giveaways.
+  description: I'm currently employed by <a href="https://www.ibuildings.com" target="_blank">Ibuildings</a>, a company focused on creating modern web and mobile application.
+               <br/>Previously I worked for <a href="http://www.objectway.com" target="_blank">Objectway</a>, one of the top 100 worldwide companies that build software platforms for the financial services industry.
+
+done:
+  title: The best what I've done
+  list:
+    - Cofound an awesome weekly newsletter (<a href="https:fullstackbulletin.com" target="_blank">fullstackbulletin.com</a>)
+    - Launch a startup and learn from failure (<a href="http:sbaam.com" target="_blank">Sbaam.com</a>)
+    - Start writing my experience as remote worker (<a href="http://codingfrom.com" target="_blank">codingfrom.com</a>)
+    - Receive awards for my business ideas in Italy and Ireland
+    - Teach in web design and web development courses
+    - Work for web companies side by side with brilliant people
+    - Develop a proprietary e-commerce platform
+    - Build an online community with more 140k readers
+
 mindset:
   title: Mindset
   intro: I have an entrepreneurial attitude.

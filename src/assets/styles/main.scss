@@ -4,9 +4,9 @@
 $rem-base: 16px !default;
 $baseline: rem-calc(20);
 
-$page-container: rem-calc(1300);
+$page-container: rem-calc(1200);
 
-$debug: true;
+$debug: false;
 $use-dry: true;
 $row-width: rem-calc(1980);
 $column-gutter: rem-calc(40);
@@ -62,7 +62,7 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: inherit;
 }
 
@@ -75,7 +75,7 @@ h2 {
 }
 
 h3 {
-  font-size: rem-calc(25);
+  font-size: rem-calc(35);
 }
 
 p {
@@ -149,26 +149,19 @@ p + p {
   
   &__wrapper {
     @include grid-row(false);
-    min-height: 100vh;
     align-items: center;
-    padding: $baseline * 3 0;
-  
-    @include media-query(medium) {
-      padding: $baseline * 4 0;
-    }
   }
   
   &__index-wrapper {
     @include grid-column($width:(xxsmall: 12, medium: 4), $collapse: true);
     align-items: center;
+    padding: $baseline * 3 0 $baseline * 2;
   }
   
   &__info-wrapper {
     @include grid-column($width:(xxsmall: 12, medium: 8), $collapse: true);
-    margin-top: $baseline * 2;
   
     @include media-query(medium) {
-      margin-top: 0;
       border-left: 1px dashed $color-neutral-lower;
     }
   }
@@ -237,11 +230,12 @@ p + p {
   }
   
   &__link {
-    font-size: rem-calc(18);
+    font-size: rem-calc(20);
     display: inline-flex;
     position: relative;
     padding: rem-calc(4 0);
     line-height: 1;
+    text-decoration: none;
     
     &:after {
       content: '';
@@ -255,28 +249,6 @@ p + p {
   
     & + & {
       margin-left: $column-gutter / 2;
-    }
-  }
-  
-  &__list {
-    margin-top: $baseline * 2;
-  }
-  
-  &__list-title{
-  
-  }
-  
-  &__list-items{
-    list-style: none;
-    margin-top: $baseline;
-  }
-  
-  &__list-item{
-    font-size: rem-calc(18);
-    padding: ($baseline / 2) 0;
-    
-    &:first-child {
-      border-top: 0;
     }
   }
   
@@ -312,12 +284,58 @@ p + p {
     }
   }
   
+  &--cover &__wrapper {
+    min-height: 100vh;
+  }
+  
   &--skills {
   
   }
   
   &--experiences {
   
+  }
+  
+  &--the-best {
+  }
+}
+
+.the-best {
+  max-width: $page-container;
+  margin: 0 auto;
+  
+  &__title {
+    padding-left: rem-calc(40);
+  }
+  
+  &__list {
+    margin-top: $baseline * 2.5;
+  
+    @include media-query(medium) {
+      column-count: 2;
+      column-gap: 2rem;
+    }
+  }
+  
+  &__item {
+    display: inline-block;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+}
+
+.item-check {
+  font-size: rem-calc(22);
+  line-height: 1.3;
+  padding-left: rem-calc(40);
+  position: relative;
+  
+  &:before {
+    position: absolute;
+    top: rem-calc(-8);
+    left: 0;
+    content: '\2713';
+    font-size: 140%;
   }
 }
 
@@ -337,7 +355,10 @@ p + p {
   }
   
   &__section {
-    min-height: 100vh;
+    
+    &--cover {
+      min-height: 100vh;
+    }
     
     &--skills {
     
@@ -345,6 +366,22 @@ p + p {
     
     &--experiences {
       background-color: #f6f7f8;
+    }
+  
+    &--the-best {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $color-neutral-lower;
+      padding: $baseline * 3 ($column-gutter / 2);
+  
+      @include media-query(xsmall) {
+        padding: $baseline * 4 $column-gutter;
+      }
+  
+      @include media-query(medium) {
+        padding: $baseline * 7 $column-gutter * 2 $baseline * 6;
+      }
     }
   }
   

@@ -111,10 +111,20 @@ p + p {
 
 .footer {
   background-color: $color-neutral-highest;
-  color: $color-neutral-medium;
+  color: $color-neutral-high;
+  text-align: center;
+  padding: ($baseline * 3) ($column-gutter / 2) ($baseline * 4);
+  font-size: rem-calc(18);
+  line-height: 1.3;
+  
+  &__wrapper {
+    max-width: $page-container;
+    margin: 0 auto;
+  }
   
   &__logo {
     max-width: rem-calc(80);
+    margin: 0 auto;
   
     &:hover {
       .mark {
@@ -142,6 +152,16 @@ p + p {
     svg {
       width: 100%;
     }
+  }
+  
+  &__copyright {
+    margin-top: $baseline * 1.5;
+  }
+  
+  &__update {
+    margin-top: $baseline;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: rem-calc(14);
   }
 }
 

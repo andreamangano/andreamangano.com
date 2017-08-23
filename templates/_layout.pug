@@ -25,7 +25,9 @@ html(lang=site.meta.lang)
     .site__footer
       footer.footer
         .footer__wrapper
+          .footer__logo
+            include ../src/assets/images/logo-footer.svg
           .footer__copyright!=site.footer.copyright
-          .footer__update!=`Last update: ${updateDate}`
+          .footer__update!=`v. <strong>${version}</strong> - Last update: ${updateDate}`
 
 

@@ -22,3 +22,10 @@ html(lang=site.meta.lang)
     .site__page
       block page
 
+    .site__footer
+      footer.footer
+        .footer__wrapper
+          .footer__copyright!=site.footer.copyright
+          .footer__update!=`Last update: ${updateDate}`
+
+

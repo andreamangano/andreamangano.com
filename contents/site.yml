@@ -3,6 +3,8 @@ meta:
   locale: en_US
   title: 'Andrea Mangano - Personal website'
   description: 'Andrea Mangano - UI/Web Developer - Resume'
+  canonicalUrl: http://andreamangano.com
+  twitterProfile: andreaman87
 
 links:
   - type: email

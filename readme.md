@@ -1,4 +1,3 @@
-# Andrea Mangano Personal Website
-(Work in Progress)
+# Andrea Mangano Personal Website (WIP)
 ---
-[Website Preview](https://andreamangano.github.io/andreamangano.com/)
+The source code for [andreamangano.com](https://andreamangano.github.io/andreamangano.com/) website.

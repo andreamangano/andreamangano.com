@@ -1,5 +1,5 @@
 doctype html
-html(lang=site.meta.lang)
+html(lang=site.meta.lang prefix="og: http://ogp.me/ns#")
   head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
@@ -12,10 +12,27 @@ html(lang=site.meta.lang)
     name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0")
 
+    //- Styles
     link(
-      href=`css/main__${version}.css`
-      rel="stylesheet"
-      type="text/css")
+    href=`css/main__${version}.css`
+    rel="stylesheet"
+    type="text/css")
+
+    //- Facebook
+    meta(property="og:title" content=site.meta.title)
+    meta(property="og:description" content=site.meta.description)
+    meta(property="og:site_name" content=site.meta.title)
+    meta(property="og:type" content="website")
+    meta(property="og:url" content=site.meta.canonicalUrl)
+    meta(property="og:image" content=`${site.meta.canonicalUrl}/assets/images/share/banner-facebook.jpg`)
+    meta(property="og:locale" content=site.meta.locale)
+
+    //- Twitter
+    meta(property="twitter:card" content="website")
+    meta(property="twitter:site" content=site.meta.twitterProfile)
+    meta(property="twitter:title" content=site.meta.title)
+    meta(property="twitter:description" content=site.meta.description)
+    meta(property="twitter:image" content=`${site.meta.canonicalUrl}/assets/images/share/banner-twitter.jpg`)
 
   body.site
 

@@ -75,7 +75,7 @@ h2 {
 }
 
 h3 {
-  font-size: rem-calc(35);
+  font-size: rem-calc(30);
 }
 
 p {
@@ -282,6 +282,15 @@ p + p {
     }
   }
   
+  &__list {
+    margin-top: $baseline * 3;
+  
+    @include media-query(large) {
+      transform: translateX(-25%);
+      width: 130%;
+    }
+  }
+  
   &--cover {
     background-color: $color-primary;
     color: $color-primary-higher;
@@ -326,14 +335,10 @@ p + p {
   max-width: $page-container;
   margin: 0 auto;
   
-  &__title {
-    padding-left: rem-calc(40);
-  }
-  
   &__list {
     margin-top: $baseline * 2.5;
   
-    @include media-query(medium) {
+    @include media-query(large) {
       column-count: 2;
       column-gap: 2rem;
     }
@@ -382,23 +387,6 @@ p + p {
     
     &--experiences {
       background-color: #f6f7f8;
-    }
-  
-    &--the-best {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: $color-primary;
-      color: $color-primary-higher;
-      padding: ($baseline * 3) ($column-gutter / 2);
-  
-      @include media-query(xsmall) {
-        padding: $baseline * 4 $column-gutter;
-      }
-  
-      @include media-query(medium) {
-        padding: $baseline * 7 $column-gutter * 2 $baseline * 6;
-      }
     }
   }
   

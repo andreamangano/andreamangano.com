@@ -59,16 +59,14 @@ block page
                   p.section__intro!=home.experiences.intro
                   p.section__description!=home.experiences.description
 
-      //- THE BEST
-      section.page-home__section.page-home__section--the-best
-        .page-home__section-wrapper
-          .the-best
-            .the-best__wrapper
-              h3.the-best__title!=home.done.title
-              .the-best__list
-                each item in home.done.list
-                  .the-best__item
-                    .item-check!=item
+                  .section__list
+                    .the-best
+                      .the-best__wrapper
+                        h3.the-best__title!=home.done.title
+                        .the-best__list
+                          each item in home.done.list
+                            .the-best__item
+                              .item-check!=item
 
       // MINDSET
       section.page-home__section.page-home__section--mindset

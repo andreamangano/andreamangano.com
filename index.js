@@ -6,6 +6,7 @@ const Metalsmith = require('metalsmith'),
   sass= require('metalsmith-sass'),
   rewrite = require('metalsmith-rewrite'),
   autoprefixer = require('metalsmith-autoprefixer'),
+  moment = require('moment'),
   pkg = require('./package.json'),
   contents = require('./contents/'),
   config = require('./config/metalsmith');
@@ -13,7 +14,13 @@ const Metalsmith = require('metalsmith'),
 console.log(`${devBuild ? 'Development' : 'Production'} build, version ${pkg.version}`);
 
 Metalsmith(__dirname)
-  .metadata(Object.assign({}, contents, {version: pkg.version}))
+  .metadata(Object.assign({},
+    contents,
+    {
+      version: pkg.version,
+      updateDate: moment().format('MMMM Do YYYY')
+    }
+  ))
   .source(config.sourceDir)
   .destination(config.destinationDir)
   .clean(true)

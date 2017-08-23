@@ -8,6 +8,9 @@ links:
   - type: email
     href: andreaman87@gmail.com
     label: Mail me
+  - type: twitter
+    href: https://twitter.com/andreaman87
+    label: Twitter
   - type: linkedin
     href: https://it.linkedin.com/in/manganoandrea
     label: Linkedin

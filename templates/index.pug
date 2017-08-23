@@ -25,7 +25,7 @@ block page
                       if link.type === 'email'
                         a.section__link(href=`mailto:${link.href}?subject=Hi%20Andrea!`)=link.label
                       else
-                        a.section__link(href=link.href)=link.label
+                        a.section__link(href=link.href target="_blank")=link.label
 
       //- SKILLS
       section.page-home__section.page-home__section--skills

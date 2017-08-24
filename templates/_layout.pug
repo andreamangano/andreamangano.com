@@ -47,4 +47,20 @@ html(lang=site.meta.lang prefix="og: http://ogp.me/ns#")
           .footer__copyright!=site.footer.copyright
           .footer__update!=`v. <strong>${version}</strong> - Last update: ${updateDate}`
 
+    script.
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-105243546-1', 'auto');
+      ga('send', 'pageview');
+
 

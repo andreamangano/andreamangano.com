@@ -320,10 +320,6 @@ p + p {
     }
   }
   
-  &--cover &__wrapper {
-    min-height: 100vh;
-  }
-  
   // &--skills {}
   
   // &--experiences {}
@@ -379,9 +375,7 @@ p + p {
   
   &__section {
     
-    &--cover {
-      min-height: 100vh;
-    }
+    // &--cover {}
     
     // &--skills {}
     
